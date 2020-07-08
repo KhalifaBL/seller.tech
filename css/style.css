@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f5f4f4;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+#nav-div {
+  margin-top: 17px;
+  margin-right: 40px;
+}
+#navbar-menu {
+  width: 100vw;
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  margin-right: 35px;
+
+  justify-content: space-between;
+}
+
+.logo-nav {
+  margin-left: 30px;
+  margin-top: 7px;
+}
+#nav-list {
+  display: flex;
+  justify-content: center;
+}
+#nav-list li:first-child {
+  align-self: flex-star;
+  justify-self: flex-start;
+}
+#nav-list li {
+  display: inline;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 5px 9px 5px 9px;
+  border-radius: 5px;
+  transition: background-color 500ms linear;
+  transition: color 100ms linear;
+}
+#nav-list li:not(#active-tab):hover {
+  background-color: #fe0000;
+  color: white;
+  transition: background-color 900ms linear;
+  transition: color 300ms linear;
+}
+#active-tab {
+  border: 2px solid #fe0000;
+  background-color: #fe0000;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 800ms linear;
+  transition: color 00ms linear;
+  padding: 5px 9px 5px 9px;
+}
+
+#nav-list a {
+  text-decoration: none;
+  color: black;
+}
+#main-content {
+  text-align: center;
+  font-weight: 300;
+
+  height: fit-content;
+  padding: 40px 40px 40px 0px;
+}
+#nav-logo {
+  height: 50px;
+  vertical-align: middle;
+}
+.three-card-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.three-card-section > div {
+  margin: 20px;
+}
+.card {
+  transition: all 0.2s ease-in-out;
+  width: 350px !important;
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card-text {
+  text-align: left;
+}
+.card-img-top {
+  height: 250px;
+}
+
+.voir-plus-button {
+  border: 2px solid #fe0000;
+  border-radius: 30px;
+  padding: 8px 12px 8px 12px;
+  background-color: white;
+  width: 150px;
+  font-family: "Roboto", "Arial";
+  margin: 30px auto 0px auto;
+  font-size: 18px;
+  font-weight: 800;
+  transition: background-color 300ms ease-in-out;
+}
+.voir-plus-button a {
+  color: #fe0000;
+  text-decoration: none;
+  -webkit-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+.voir-plus-button:hover a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 500ms ease-in-out;
+  -ms-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+.voir-plus-button:hover {
+  background-color: #fe0000;
+  -webkit-transition: background-color 500ms ease-in-out;
+  -ms-transition: background-color 500ms ease-in-out;
+  cursor: pointer;
+  transition: background-color 500ms ease-in-out;
+}
+.voir-plus-button > div {
+  color: #fe0000;
+  -webkit-transition: color 300ms ease-in-out;
+  -ms-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+.voir-plus-button:hover > div {
+  color: white;
+  -webkit-transition: color 500ms ease-in-out;
+  -ms-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+
+.carousel-image {
+  height: 760px;
+}
+
+#footer {
+  height: 350px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  background-color: rgb(20, 20, 20);
+}
+.fb-ic i {
+  color: white;
+}
+.fb-ic i:hover {
+  color: #4267b2;
+}
+
+.tw-ic i {
+  color: white;
+}
+.tw-ic i:hover {
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+.ins-ic i {
+  color: white;
+}
+.ins-ic i:hover {
+  color: #f2b360;
+  cursor: pointer;
+}
+.li-ic i {
+  color: white;
+}
+.li-ic i:hover {
+  color: #0491c1;
+  cursor: pointer;
+}
+.email i {
+  color: white;
+}
+
+.email i:hover {
+  color: #ff0100;
+  cursor: pointer;
+}
+
+.image-background img {
+  width: 100vw;
+}
+
+.para-description {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+.specs {
+  margin-top: 20px;
+  text-align: center;
+}
+.specs h4 {
+  color: red;
+}

@@ -1,0 +1,14 @@
+.image-background img {
+  width: 100vw;
+}
+.close-button {
+  display: none;
+}
+#fade {
+  display: none;
+  height: 700px;
+  width: 900px;
+}
+.para-description {
+  font-size: 24px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="res/fav-logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/reparation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <title>Seller.tech | Leader de réparation des PC</title>
+  </head>
+  <body>
+    <section id="navbar-menu">
+      <div class="logo-nav">
+        <a href=""><img src="res/seller.tech.png" id="nav-logo" alt="" /></a>
+      </div>
+      <div id="nav-div">
+        <ul id="nav-list">
+          <a href="#"> <li>Accueil</li></a>
+
+          <a href="boutique.html"
+            ><li><i class="fas fa-store"></i> Boutique</li></a
+          >
+          <a href="reparation.html"
+            ><li id="active-tab"><i class="fas fa-tools"></i> Réparation</li></a
+          >
+          <a href="achat.html"
+            ><li><i class="fas fa-money-check-alt"></i> Vente</li></a
+          >
+
+          <a href="contact.html"
+            ><li><i class="far fa-envelope"></i> Contact</li></a
+          >
+        </ul>
+      </div>
+    </section>
+    <div class="image-background">
+      <img src="res/repair.png" alt="" />
+    </div>
+    <section id="main-content">
+      <div id="main-content">
+        <h1>Nous réparons votre ordinateur portable endommagé</h1>
+        <p class="para-description">
+          Veuillez remplir ce formulaire puis un agent de Seller.tech vous
+          contactera pour terminer le process.
+        </p>
+      </div>
+      <div id="notification-alert" class="alert animated tada">
+        <span id="shutme-down" class="closebtn">&times;</span>
+        <strong>Congratulations!</strong> You've just submitted the form!
+      </div>
+
+      <form id="repair-form">
+        <div class="form-2-elements">
+          <div>
+            <label for="">Nom & Prenom</label>
+            <input type="text" name="" id="name-input" required />
+          </div>
+          <div>
+            <label for="">Tel</label>
+            <input type="text" id="tel-input" required />
+          </div>
+        </div>
+        <div class="form-2-elements">
+          <div>
+            <label for="">Marque du PC</label>
+            <select class="custom-select" id="marque" name="marque">
+              <option value="HP">HP</option>
+              <option value="ASUS">ASUS</option>
+              <option value="ACER">ACER</option>
+              <option value="DELL">DELL</option>
+              <option value="TOSHIBA">TOSHIBA</option>
+              <option value="LENOVO">LENOVO</option>
+              <option value="MSI">MSI</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Modèle</label>
+            <input type="text" id="model" required />
+          </div>
+        </div>
+
+        <label for=""
+          >Veuillez décrire la panne de votre ordinateur précisément:</label
+        >
+        <textarea name="" id="message-input" placeholder="Exemple: kif nenzel al power button yet7al w mbaed 2 sec yetsaker el PC ... " required></textarea>
+        <button class="submit-button" type="submit">
+          <div>Submit</div>
+        </button>
+      </form>
+    </section>
+
+    <section id="footer">
+      <div><i class="fas fa-phone-alt"></i> Tel: +216 55 205 710</div>
+      <div><i class="fas fa-map-marker-alt"></i> Sousse, Tunisie</div>
+
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+          <!-- Facebook -->
+          <a
+            class="fb-ic"
+            href="#"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
+            </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="email" href="#">
+            <i class="far fa-envelope white-text mr-md-5 mr-3 fa-2x"></i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x">
+            </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
+            </i>
+          </a>
+        </div>
+      </div>
+      <p class="copyrights-para">
+        Copyrights © 2020 All Rights Reserved. Seller.tech.
+      </p>
+    </section>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+
+    <script src="js/repair.js"></script>
+    <!--     
+    Seller.tech, Le leader de la réparation d'ordinateurs portables en Tunisie.
+    Nous sommes une société de services pour les utilisateurs d'ordinateurs
+    portables qui offre une expérience de réparation, achat d'ordinateurs
+    endommagés et ainsi que la vente des PC reconditionnés par nos ingénieurs
+    bien qualifiés -->
+  </body>
+</html>

@@ -1,0 +1,13 @@
+#main-content-achat {
+  height: 1200px;
+  padding: 40px 40px 40px 10px;
+}
+.submit-button {
+  margin-left: 230px ;
+}
+@media (max-width: 640px) {
+  #main-content-achat {
+    height: 1700px;
+    padding: 40px 40px 40px 10px;
+  }
+}

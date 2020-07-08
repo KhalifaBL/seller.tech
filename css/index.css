@@ -1,0 +1,16 @@
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #141414;
+  width: 100vw;
+  padding-top: 100px;
+  height: 400px;
+  margin-left: 0px;
+  padding-left: 0;
+}
+.counter-logo{
+    color: white;
+}
+.counter{
+    font-size: 70px;
+}
